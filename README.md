@@ -43,18 +43,34 @@ D - E (5.0)
 
 ---
 
-## How to Run
+## ▶️ How to Run
 
-1. **Compile all Java files**
+### 🧩 Option 1 — Run in IntelliJ IDEA (Recommended)
+1. Open the project folder (`DAA-bonus-task`) in **IntelliJ IDEA**.
+2. Open `Main.java`.
+3. Click the **green ▶️ Run** button next to the `main()` method or in the top toolbar.
+
+That’s it — IntelliJ will compile and run the project automatically.
+
+---
+
+### 💻 Option 2 — Run from Command Line
+
+Make sure you have the **JDK (Java Development Kit)** installed and available in your PATH.
+
+#### 🪟 On Windows / macOS / Linux:
+From the **project root** (where `src/` is located), run:
 
 ```bash
-javac *.java
+javac -d out src/main/java/graph/*.java src/main/java/algorithm/*.java src/main/java/Main.java
 ```
-2. **Run the demo**
 
+Then run:
 ```bash
-java Main
+java -cp out Main
 ```
+
+---
 
 # Notes
 
